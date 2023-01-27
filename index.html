@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<div class="menu" id="mainMenu">
+		<button onclick="windowManager.changeMenu('gameMenu')">game</button>
+		<button onclick="windowManager.changeMenu('settingsMenu')">settings</button>
+		<button onclick="windowManager.changeMenu('creditsMenu')">credits</button>
+	</div>
+
+	<div class="menu" id="gameMenu">
+		<button onclick="windowManager.changeMenu('mainMenu')">main menu 1</button>
+	</div>
+
+	<div class="menu" id="settingsMenu">
+		<button onclick="windowManager.changeMenu('mainMenu')">main menu 2</button>
+	</div>
+
+	<div class="menu" id="creditsMenu">
+		<button onclick="windowManager.changeMenu('mainMenu')">main menu 3</button>
+	</div>
+
+	<script type="text/javascript" src="menu.js"></script>
+	<script type="text/javascript" src="menuApplication.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
